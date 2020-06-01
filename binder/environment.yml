@@ -3,7 +3,6 @@ channels:
   - conda-forge
   - bioconda
   - defaults
-  - r
 dependencies:
   - notebook=5.7.5
   - jupyterlab=1.2
@@ -27,10 +26,7 @@ dependencies:
   - bioconda::trimmomatic=0.39
   - bioconda::sra-tools=2.10.3
   - bioconda::goatools=1.0.5
-  - bioconductor-deseq2=1.22.1
-  - r-gplots=3.0.1.1
-  - r-rcolorbrewer=1.1_2
-  - r-calibrate=1.7.2
+  - bioconda::bioconductor-deseq2=1.22.1
   - pip
   - pip: 
     - ncbi-acc-download
