@@ -6,3 +6,5 @@ We will cover the basics of Next Generation Sequencing and bioinformatics of suc
 - [The Molecular and Genomics Informatics Core (your host today)](https://ru-magic.github.io/MaGIC/)
 
 *This workshop is not meant to be comprehensive, but to serve as a baseline. Continued education opportunities are available through full courses*
+
+[![Binder](http://binder.bioinformagic.io/badge_logo.svg)](http://binder.bioinformagic.io/v2/gh/RU-MaGIC-Classes/SSRP_Workshop/master?filepath=RNA_seq_workshop.ipynb)
