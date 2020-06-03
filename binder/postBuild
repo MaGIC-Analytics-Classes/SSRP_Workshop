@@ -1,13 +1,22 @@
 #!/bin/bash
-mkdir raw_files
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354753
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354752
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354751
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354750
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354749
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354748
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354747
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354746
-fastq-dump --split-files --gzip --outdir rawfiles/ SAMN09354745
-cd raw_files && curl -O -J -L https://osf.io/v24pt/download && cd ..
+mkdir raw_files && cd raw_files
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/008/SRR7261718/SRR7261718_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/008/SRR7261718/SRR7261718_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/009/SRR7261719/SRR7261719_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/009/SRR7261719/SRR7261719_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/000/SRR7261720/SRR7261720_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/000/SRR7261720/SRR7261720_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/001/SRR7261721/SRR7261721_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/001/SRR7261721/SRR7261721_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/002/SRR7261722/SRR7261722_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/002/SRR7261722/SRR7261722_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/003/SRR7261723/SRR7261723_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/003/SRR7261723/SRR7261723_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/004/SRR7261724/SRR7261724_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/004/SRR7261724/SRR7261724_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/005/SRR7261725/SRR7261725_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/005/SRR7261725/SRR7261725_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/006/SRR7261726/SRR7261726_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/006/SRR7261726/SRR7261726_2.fastq.gz
+curl -O -J -L https://osf.io/v24pt/download && cd ..
 mkdir references && cd references && ncbi-acc-download --format fasta NZ_CP009273.1 && wget -O ecoli_genes.gff "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?db=nuccore&report=gff3&id=NZ_CP009273.1" && cd ..
