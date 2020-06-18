@@ -23,10 +23,6 @@ dependencies:
   - conda-forge::r-rcolorbrewer=1.1_2
 
   - bioconductor-deseq2=1.28.0
-  - bioconductor-dupradar=1.14.0
-  - bioconductor-edger=3.26.5
-  - bioconductor-tximeta=1.2.2
-  - bioconductor-summarizedexperiment=1.14.0
 
   - bioconda::fastqc=0.11.8
   - bioconda::multiqc=1.8
