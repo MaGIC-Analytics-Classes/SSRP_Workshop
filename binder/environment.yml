@@ -12,11 +12,7 @@ dependencies:
   - ipython=7.13.0
   - pandas=1.0.3
 
-  - r-base=3.6.1
-  - star=2.6.1d
-  - picard=2.21.1
-  - rseqc=3.0.1
-
+  - conda-forge::r-base=3.6.1
   - conda-forge::r-gplots=3.0.1.1
   - conda-forge::r-rcolorbrewer=1.1_2
 
@@ -27,6 +23,8 @@ dependencies:
   - bioconda::trimmomatic=0.39
   - bioconda::sra-tools=2.10.3
   - bioconda::goatools=1.0.5
+  - bioconda::star=2.7.5a
+  - bioconda::rseqc=3.0.1
 
   - pip
   - pip: 
