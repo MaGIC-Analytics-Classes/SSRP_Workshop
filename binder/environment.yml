@@ -22,7 +22,7 @@ dependencies:
   - conda-forge::r-markdown=1.1
   - conda-forge::r-rcolorbrewer=1.1_2
 
-  - bioconductor-deseq2=1.22.1
+  - bioconductor-deseq2=1.28.1
   - bioconductor-dupradar=1.14.0
   - bioconductor-edger=3.26.5
   - bioconductor-tximeta=1.2.2
