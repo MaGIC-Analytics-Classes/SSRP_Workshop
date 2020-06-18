@@ -12,11 +12,11 @@ dependencies:
   - ipython=7.13.0
   - pandas=1.0.3
 
-  - conda-forge::r-base=3.6.1
+  - conda-forge::r-base=3.5.1
   - conda-forge::r-gplots=3.0.1.1
   - conda-forge::r-rcolorbrewer=1.1_2
 
-  #- bioconda::bioconductor-deseq2=1.28.0
+  - bioconda::bioconductor-deseq2=1.28.0
   - bioconda::fastqc=0.11.8
   - bioconda::multiqc=1.8
   - bioconda::trimmomatic=0.39
