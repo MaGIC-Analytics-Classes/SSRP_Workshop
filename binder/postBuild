@@ -18,5 +18,23 @@ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/005/SRR7261725/SRR7261725_1.fastq
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/005/SRR7261725/SRR7261725_2.fastq.gz
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/006/SRR7261726/SRR7261726_1.fastq.gz
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/006/SRR7261726/SRR7261726_2.fastq.gz
+mv SRR7261718_1.fastq.gz WT1_1.fastq.gz
+mv SRR7261718_2.fastq.gz WT1_2.fastq.gz
+mv SRR7261719_1.fastq.gz WT2_1.fastq.gz
+mv SRR7261719_2.fastq.gz WT2_2.fastq.gz
+mv SRR7261720_1.fastq.gz WT3_1.fastq.gz
+mv SRR7261720_2.fastq.gz WT3_2.fastq.gz
+mv SRR7261721_1.fastq.gz Urban1_1.fastq.gz
+mv SRR7261721_2.fastq.gz Urban1_2.fastq.gz
+mv SRR7261722_1.fastq.gz Urban2_1.fastq.gz
+mv SRR7261722_2.fastq.gz Urban2_2.fastq.gz
+mv SRR7261723_1.fastq.gz Urban3_1.fastq.gz
+mv SRR7261723_2.fastq.gz Urban3_2.fastq.gz
+mv SRR7261724_1.fastq.gz Diesel1_1.fastq.gz
+mv SRR7261724_2.fastq.gz Diesel1_2.fastq.gz
+mv SRR7261725_1.fastq.gz Diesel2_1.fastq.gz
+mv SRR7261725_2.fastq.gz Diesel2_2.fastq.gz
+mv SRR7261726_1.fastq.gz Diesel3_1.fastq.gz
+mv SRR7261726_2.fastq.gz Diesel3_2.fastq.gz
 curl -O -J -L https://osf.io/v24pt/download && cd ..
 mkdir references && cd references && ncbi-acc-download --format fasta NZ_CP009273.1 && wget -O ecoli_genes.gff "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?db=nuccore&report=gff3&id=NZ_CP009273.1" && cd ..
