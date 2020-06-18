@@ -17,9 +17,7 @@ dependencies:
   - picard=2.21.1
   - rseqc=3.0.1
 
-  - conda-forge::r-data.table=1.12.4
   - conda-forge::r-gplots=3.0.1.1
-  - conda-forge::r-markdown=1.1
   - conda-forge::r-rcolorbrewer=1.1_2
 
   - bioconductor-deseq2=1.28.0
