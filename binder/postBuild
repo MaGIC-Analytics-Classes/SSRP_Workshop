@@ -1,5 +1,7 @@
 #!/bin/bash
 conda install -c bioconda bioconductor-deseq2
+conda install -c bioconda r-ggrepel
+conda install -c r r-ggplot2
 mkdir raw_files && cd raw_files
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/008/SRR7261718/SRR7261718_1.fastq.gz
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR726/008/SRR7261718/SRR7261718_2.fastq.gz
