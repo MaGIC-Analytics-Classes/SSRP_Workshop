@@ -1,5 +1,5 @@
 #!/bin/bash
-conda install -c bioconda bioconductor-deseq2
+conda install -c bioconda bioconductor-deseq2=1.28.1-0
 conda install -c bioconda r-ggrepel
 conda install -c r r-ggplot2
 mkdir raw_files && cd raw_files
